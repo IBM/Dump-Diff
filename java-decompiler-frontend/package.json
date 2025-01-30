@@ -1,0 +1,22 @@
+{
+  "name": "dump-and-diff-frontend",
+  "author": "aaron.charles@ibm.com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.4.38",
+    "vue": "^3.2.13",
+    "vue-cli-service": "^5.0.10",
+    "vue-template-compiler": "^2.7.16",
+    "axios": "^1.7.2",
+    "diff2html": "^3.4.48"
+  },
+  "description": "",
+  "devDependencies": {}
+}

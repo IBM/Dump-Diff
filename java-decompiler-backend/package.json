@@ -1,0 +1,17 @@
+{
+  "name": "dump-and-diff-backend",
+  "version": "1.0.0",
+  "author": "aaron.charles@ibm.com",
+  "private": "true",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "multer": "^1.4.2",
+    "md5": "^2.3.0",
+    "express": "^4.17.1"
+  }
+}

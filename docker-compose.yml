@@ -1,0 +1,23 @@
+version: '3'
+services:
+  backend:
+    build: 
+      context: java-decompiler-backend
+      dockerfile: ../Dockerfile.backend
+    dns:
+      - 8.8.8.8
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./java-decompiler-backend:/app
+
+  frontend:
+    build:
+      context: java-decompiler-frontend
+      dockerfile: ../Dockerfile.frontend
+    dns:
+      - 8.8.8.8
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./java-decompiler-frontend:/app
