@@ -1,0 +1,27 @@
+# Use a Node.js base image
+FROM node:18
+
+# Install the JDK to get the 'jar' command
+RUN apt-get update && apt-get install -y default-jdk
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy only the application code (excluding node_modules)
+COPY package.json ./package.json
+COPY package-lock.json ./package-lock.json
+
+# clean install
+RUN npm ci
+
+# Copy files
+COPY . .
+
+# Expose the port your backend service runs on
+EXPOSE 3000
+
+# update PATH
+RUN export PATH=$PATH:./node_modules/.bin
+
+# Define the command to start the backend
+CMD ["npm", "start"]
