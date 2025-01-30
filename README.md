@@ -29,6 +29,6 @@ cp /path/to/jar/files/*.jar java-decompiler-backend/workdir/$PROJ
 Visit `http://localhost:8080` in a web browser to use the tool. 
 
 ## Gallery
-
+ 
 ![Screenshot 1](./media/screenshot1.png "Screenshot 1")
 ![Screenshot 2](./media/screenshot2.png "Screenshot 2")
